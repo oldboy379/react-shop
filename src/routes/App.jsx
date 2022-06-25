@@ -16,10 +16,10 @@ const App = () => {
 					<Route exact path="/login" element={<Login />} />
 					<Route
 						exact
-						path="/recovery-password"
+						path="/password-recovery"
 						element={<RecoveryPassword />}
 					/>
-					<Route element={NotFound} />
+					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</Layout>
 		</BrowserRouter>
