@@ -1,21 +1,6 @@
-/** @type {import('next').NextConfig} */
-
-const nextConfig = {
+module.exports = {
   reactStrictMode: true,
-  env: {
-    customKey: 'customValue',
+  images: {
+    domains: ['placeimg.com', 'api.lorem.space', 'cdn.lorem.space'],
   },
-  basePath: '/build',
-  compress: true,
-  async redirects() {
-    return [
-      {
-        source: '/hola',
-        destination: 'https://gndx.dev',
-        permanent: true,
-      }
-    ]
-  }
-}
-
-module.exports = nextConfig
+};
