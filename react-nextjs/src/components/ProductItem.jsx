@@ -20,7 +20,7 @@ const ProductItem = ({ product }) => {
           <p>${product.price}</p>
           <p>{product.title}</p>
         </div>
-        <figure onClick={() => handleClick(product)}>
+        <figure onClick={() => {}} onKeyPress={handleClick(product)} aria-hidden="true">
           <Image src={Cart} width={50} height={50} alt="add to cart" />
         </figure>
       </div>

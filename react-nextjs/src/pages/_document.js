@@ -5,12 +5,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <title>React Shop</title>
-          <script
-            dangerouslySetInnerHTML={{
-              __html: ``,
-            }}
-          />
+          <meta charSet="utf-8" />
         </Head>
         <body>
           <Main />
